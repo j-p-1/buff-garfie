@@ -2,7 +2,7 @@ import pygame, sys, time # import the needed modules
 
 pygame.init() # Init Pygame
 
-display = pygame.display.set_mode((800, 800)) # Create a 800 pixel by 800 pixel display window
+display = pygame.display.set_mode((500, 500)) # Create a 800 pixel by 800 pixel display window
 
 pygame.display.set_caption("Buff Garfie") # Set window title
 
@@ -12,27 +12,37 @@ garf_b = pygame.image.load("GarfImages/garf2.jpg")
 garf_c = pygame.image.load("GarfImages/garf3.jpg")
 garf_d = pygame.image.load("GarfImages/garf4.jpg")
 
+# BG color:
+color = (255, 255, 255)
+
 # Mainloop:
 
+# Mainloop variable
 zoop = True
 
+# Wait time
 WAIT = 0.5
 
 while zoop:
+	# Check for an event
 	for event in pygame.event.get():
+		# If the window x button is clicked:
 		if event.type == pygame.QUIT:
 			pygame.quit() # Stop Pygame
 			sys.exit() # Exit the window as after calling the above, the window with the content just hangs.
 			
+	# Main Program Logic
 	display.blit(garf_a, (0, 0)) # Show garf image 1
 	pygame.display.flip() # Show Garfie
-	time.sleep(WAIT)
-	display.blit(garf_b, (0, 0)) # Show garf image 2
+	time.sleep(WAIT) # Wait for 0.5 seconds
+	display.fill(color) # Cover over other images with background color so then it looks like one large image
+	display.blit(garf_b, (0, 75)) # Show garf image 2
 	pygame.display.flip() # Show Garfie
-	time.sleep(WAIT)
+	time.sleep(WAIT) # Wait for 0.5 seconds
 	display.blit(garf_c, (0, 0)) # Show garf image 3
 	pygame.display.flip() # Show Garfie
-	time.sleep(WAIT)
-	display.blit(garf_d, (0, 0)) # Show garf image 4
+	time.sleep(WAIT) # Wait for 0.5 seconds
+	display.fill(color) # Cover over other images with background color so then it looks like one large image
+	display.blit(garf_d, (50, 0)) # Show garf image 4
 	pygame.display.flip() # Show Garfie
-	time.sleep(WAIT)
+	time.sleep(WAIT) # Wait for 0.5 seconds
