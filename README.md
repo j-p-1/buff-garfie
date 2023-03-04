@@ -2,7 +2,7 @@
 
 Version: 1.0.0
 
-Code that will open buff Garfield every second
+Code that will display a Pygame window with images of buff Garfield every 0.5 seconds until you close the window.
 
 ## Install:
 
