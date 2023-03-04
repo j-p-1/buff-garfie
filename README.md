@@ -1,6 +1,6 @@
 # buff-garfie
-<img src="https://img.shields.io/github/v/tag/j-p-1/buff-garfie?color=Lime&label=Current%20Version%20(Main%20Branch)">
-<img src="https://img.shields.io/github/v/release/j-p-1/buff-garfie?label=Latest%20Stable%20Release">
+
+Version: 1.0.0
 
 Code that will open buff Garfield every second
 
@@ -33,7 +33,3 @@ $ python3 garfie.py
 Things that are not bugs:
 
 - Window does not close upon clicking X. (Intentional by Design: Mainloop causes this so, the garf code must be executed before the event getter is executed.)
-
-## Version:
-
-1.0.0
