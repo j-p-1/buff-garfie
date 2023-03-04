@@ -1,4 +1,7 @@
 # buff-garfie
+<img src="https://img.shields.io/github/v/tag/j-p-1/buff-garfie?color=Lime&label=Current%20Version%20(Main%20Branch)">
+<img src="https://img.shields.io/github/v/release/j-p-1/buff-garfie?label=Latest%20Stable%20Release">
+
 Code that will open buff Garfield every second
 
 ## Install:
