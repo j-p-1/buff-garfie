@@ -12,13 +12,15 @@ Code that will display a Pygame window with images of buff Garfield every 0.5 se
 
 3. Open up a CMD window where the garfie code is and type the following below (Do not include > or $ (Terminal Cursor)!!!):
 
+Install on Windows
+
 ```
 > pip install -r requirements.txt
 
 > python garfie.py
 ```
 
-or if you are running a machine with a different OS:
+or if you are running a machine with MacOS(X) or Linux:
 
 ```
 $ pip3 install -r requirements.txt
